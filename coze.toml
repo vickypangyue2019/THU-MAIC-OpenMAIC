@@ -3,8 +3,8 @@ requires = ["nodejs-24"]
 
 [dev]
 build = ["pnpm", "install"]
-run = ["bash", "-c", "pnpm run build && PORT=5000 HOSTNAME=0.0.0.0 node .next/standalone/server.js"]
+run = ["bash", "-c", "npx next build && PORT=5000 HOSTNAME=0.0.0.0 node .next/standalone/server.js"]
 
 [deploy]
 build = ["pnpm", "install"]
-run = ["bash", "-c", "pnpm run build && PORT=5000 HOSTNAME=0.0.0.0 node .next/standalone/server.js"]
+run = ["bash", "-c", "npx next build && PORT=5000 HOSTNAME=0.0.0.0 node .next/standalone/server.js"]
